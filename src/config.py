@@ -1,6 +1,11 @@
+"""config.py."""
+
+
 class Config:
+    """Configuration class containing all necessary settings for the NeRF project."""
+
     # Dataset
-    dataset_path = 'path/to/your/dataset'
+    dataset_path = "path/to/your/dataset"
 
     # Camera parameters (dummy variables)
     focal_length = (500.0, 500.0)  # (f_x, f_y)
@@ -17,10 +22,10 @@ class Config:
     num_epochs = 30
     learning_rate = 1e-4
     num_sample_points = 64
-    optimizer = 'Adam'
-    loss_function = 'mse'
+    optimizer = "Adam"
+    loss_function = "mse"
 
     # Output
-    output_dir = 'path/to/output/directory'
-    model_checkpoint_dir = 'path/to/model/checkpoints'
-    rendered_images_dir = 'path/to/rendered/images'
+    output_dir = "path/to/output/directory"
+    model_checkpoint_dir = "path/to/model/checkpoints"
+    rendered_images_dir = "path/to/rendered/images"
