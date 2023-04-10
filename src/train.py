@@ -47,9 +47,7 @@ def train_nerf(config):
             )  # Use random view directions for this example
 
             alpha, rgb = model(sample_points, view_directions)
-            loss = compute_loss(
-                alpha, rgb, img, sample_points, config
-            )  # Assuming the compute_loss function is in a separate file
+            loss = compute_loss(alpha, rgb, img, sample_points, config)
 
             loss.backward()
             optimizer.step()
